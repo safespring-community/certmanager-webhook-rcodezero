@@ -88,3 +88,7 @@ podSecurityContext:
   ##
   supplementalGroups: []
 
+# -- rcodezero Secret API key
+# -- To not store it in plain text, use sops or similar.
+# -- The secret is not created if not set.
+rcodezeroApiToken: ""
