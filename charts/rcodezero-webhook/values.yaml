@@ -92,3 +92,8 @@ podSecurityContext:
 # -- To not store it in plain text, use sops or similar.
 # -- The secret is not created if not set.
 rcodezeroApiToken: ""
+
+features:
+  # -- Disable if your Kubernetes cluster doesn't have API Priority and Fairness enabled.
+  # -- It is enabled by default since a while.
+  apiPriorityAndFairness: true
