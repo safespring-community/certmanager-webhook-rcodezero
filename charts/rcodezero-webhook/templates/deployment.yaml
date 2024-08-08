@@ -11,7 +11,7 @@ metadata:
 spec:
   replicas: {{ .Values.replicaCount }}
   {{- if .Values.podSecurityContext.enabled }}
-    securityContext: {{- omit .Values.podSecurityContext "enabled" | toYaml | nindent 8 }}
+  securityContext: {{- omit .Values.podSecurityContext "enabled" | toYaml | nindent 8 }}
   {{- end }}
   selector:
     matchLabels:
@@ -32,7 +32,7 @@ spec:
           {{- end }}
           imagePullPolicy: {{ .Values.image.pullPolicy }}
           args:
-            - --secure-port={{ .Values.service.port }}
+            - --secure-port={{ .Values.containerport }}
             - --tls-cert-file=/tls/tls.crt
             - --tls-private-key-file=/tls/tls.key
           env:
@@ -40,7 +40,7 @@ spec:
               value: {{ .Values.groupName | quote }}
           ports:
             - name: https
-              containerPort: {{ .Values.service.port }}
+              containerPort: {{ .Values.containerport }}
               protocol: TCP
           livenessProbe:
             httpGet:
