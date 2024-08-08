@@ -46,3 +46,24 @@ Create chart name and version as used by the chart label.
 {{- define "certmanager-webhook-rcodezero.servingCertificate" -}}
 {{ printf "%s-webhook-tls" (include "certmanager-webhook-rcodezero.fullname" .) }}
 {{- end -}}
+
+{{/*
+Common labels
+*/}}
+{{- define "certmanager-webhook-rcodezero.labels" -}}
+helm.sh/chart: {{ include "certmanager-webhook-rcodezero.chart" . }}
+{{ include "certmanager-webhook-rcodezero.selectorLabels" . }}
+{{- if .Chart.AppVersion }}
+app.kubernetes.io/version: {{ .Chart.AppVersion | quote }}
+{{- end }}
+app.kubernetes.io/managed-by: {{ .Release.Service }}
+{{- end }}
+
+
+{{/*
+Selector labels
+*/}}
+{{- define "certmanager-webhook-rcodezero.selectorLabels" -}}
+app.kubernetes.io/name: {{ include "certmanager-webhook-rcodezero.name" . }}
+app.kubernetes.io/instance: {{ .Release.Name }}
+{{- end }}
