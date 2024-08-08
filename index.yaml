@@ -3,6 +3,21 @@ entries:
   certmanager-webhook-rcodezero:
   - apiVersion: v2
     appVersion: v0.4.0
+    created: "2024-08-08T15:19:11.250031721Z"
+    description: Cert Manager Webhook for RcdoezERo.
+    digest: 13be1fac4ed058ab1926771cfa1e9b35b0ca8ff6689f81667835e30d999b087b
+    home: https://github.com/blankdots/certmanager-webhook-rcodezero
+    maintainers:
+    - email: mib@nic.at
+      name: Michael Braunoeder
+      url: https://www.rcodezero.at
+    name: certmanager-webhook-rcodezero
+    type: application
+    urls:
+    - https://github.com/blankdots/certmanager-webhook-rcodezero/releases/download/certmanager-webhook-rcodezero-0.4.2/certmanager-webhook-rcodezero-0.4.2.tgz
+    version: 0.4.2
+  - apiVersion: v2
+    appVersion: v0.4.0
     created: "2024-08-08T15:14:05.054292213Z"
     description: Cert Manager Webhook for RcdoezERo.
     digest: c4c93e75354b0963df93fe75a0f28d2cdea77d78fc5e509b5080e3e8cd9ffb03
@@ -76,4 +91,4 @@ entries:
     urls:
     - https://github.com/blankdots/certmanager-webhook-rcodezero/releases/download/certmanager-webhook-rcodezero-0.3.1/certmanager-webhook-rcodezero-0.3.1.tgz
     version: 0.3.1
-generated: "2024-08-08T15:14:05.054316188Z"
+generated: "2024-08-08T15:19:11.250103057Z"
