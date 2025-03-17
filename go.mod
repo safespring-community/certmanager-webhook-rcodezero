@@ -10,7 +10,7 @@ require (
 	github.com/cert-manager/cert-manager v1.17.1
 	github.com/miekg/dns v1.1.63
 	k8s.io/apiextensions-apiserver v0.32.2
-	k8s.io/apimachinery v0.32.2
+	k8s.io/apimachinery v0.32.3
 	k8s.io/client-go v0.32.2
 	k8s.io/klog/v2 v2.130.1
 )
