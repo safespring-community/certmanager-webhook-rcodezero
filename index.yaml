@@ -2,6 +2,24 @@ apiVersion: v1
 entries:
   certmanager-webhook-rcodezero:
   - apiVersion: v2
+    appVersion: v0.6.3
+    created: "2025-04-22T12:49:10.273346814Z"
+    description: Cert Manager Webhook for rcodezero.
+    digest: 83b2342436cb81610902aac4056eca47d6979c5062445819b921e309eba47c84
+    home: https://github.com/safespring-community/certmanager-webhook-rcodezero
+    maintainers:
+    - email: mib@nic.at
+      name: Michael Braunoeder
+      url: https://www.rcodezero.at
+    - email: hello@safespring.com
+      name: safespring
+      url: https://www.safespring.com/
+    name: certmanager-webhook-rcodezero
+    type: application
+    urls:
+    - https://github.com/safespring-community/certmanager-webhook-rcodezero/releases/download/certmanager-webhook-rcodezero-0.6.3/certmanager-webhook-rcodezero-0.6.3.tgz
+    version: 0.6.3
+  - apiVersion: v2
     appVersion: v0.6.2
     created: "2025-03-25T10:25:33.123486868Z"
     description: Cert Manager Webhook for rcodezero.
@@ -274,4 +292,4 @@ entries:
     urls:
     - https://github.com/blankdots/certmanager-webhook-rcodezero/releases/download/certmanager-webhook-rcodezero-0.3.1/certmanager-webhook-rcodezero-0.3.1.tgz
     version: 0.3.1
-generated: "2025-03-25T10:25:33.123603686Z"
+generated: "2025-04-22T12:49:10.273485594Z"
