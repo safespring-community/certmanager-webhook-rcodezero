@@ -1,0 +1,13 @@
+# More info: https://docs.docker.com/engine/reference/builder/#dockerignore-file
+# Exclude everything
+**
+
+# Re-include files inside those dirs (otherwise Docker won't recurse)
+!main.go
+
+# Remove tests
+**/*_test.go
+
+# Re-include Go module files
+!go.mod
+!go.sum
